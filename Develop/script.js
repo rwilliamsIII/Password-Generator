@@ -23,8 +23,12 @@ const randomFunc = {
   symbol: getRandomSymbol
 };
 
-var confirmPassword = confirm ("Need a secure password?")
-
+var confirmPassword = confirm ("Need a secure password?");
+var promptLength = prompt ("How many characters do you want it to be?");
+var promptLower = prompt ("Do you want lower case letters?");
+var promptUpper = prompt ("Do you want upper case letters?");
+var promptSymbols = prompt ("Do you want symbols?");
+var promptNumbers = prompt ("Do you want numbers?");
 
 // Generator Functions
 function getRandomLower() {
@@ -45,7 +49,11 @@ function getRandomSymbol() {
 }
 
 
-
+console.log(promptLength);
+console.log(promptLower);
+console.log(promptNumbers);
+console.log(promptUpper);
+console.log(promptSymbols);
 console.log(getRandomLower());
 console.log(getRandomUpper());
 console.log(getRandomNumber());
