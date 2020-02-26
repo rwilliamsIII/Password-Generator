@@ -7,14 +7,21 @@ var finalPass = ""
 function writePassword() {
 
 var promptLength = prompt ("How many characters do you want it to be?");
-  if (promptLength < 8)
-  alert ("Password must be atleast 8 characters long");
-  else {};
 var confirmLower = confirm ("Do you want lower case letters?");  
 var confirmUpper = confirm ("Do you want upper case letters?");
 var confirmSymbols = confirm ("Do you want symbols?");
 var confirmNumbers = confirm ("Do you want numbers?");
+
   
+  
+  if (confirmLower === true)
+  allChar.slice (0, 25);
+  if (confirmUpper === true)
+  allChar.slice (26, 51);
+  if (confirmNumbers === true)
+  allChar.slice (52, 62);
+  if (confirmSymbols === true)
+  allChar.slice (63, 74);
   
   var password = generatePassword();
 
