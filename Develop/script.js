@@ -25,8 +25,8 @@ var confirmNumbers = confirm ("Do you want numbers?");
   
   var password = generatePassword();
 
-  function generatePassword(promptLength){
-    var pwd = ""
+  function generatePassword(){
+    for (i = 0; i < promptLength; i++)
     
   };
 
